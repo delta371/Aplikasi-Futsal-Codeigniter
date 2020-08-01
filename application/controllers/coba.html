@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+                <input type="radio" name="jenis_kelamin" id="pria" value="Pria">
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+                <label for="wanita">Wanita</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>:</td>
+            <td>
+                <input type="checkbox" id="olahraga" name="hobi1" value="olahraga">
+                <label for="olahraga">Olahraga</label>
+                <input type="checkbox" id="musik" name="hobi3" value="Musik">
+                <label for="musik">Musik</label>
+                <input type="checkbox" id="jalan-jalan" name="hobi4" value="Jalan-jalan">
+                <label for="jalan-jalan">Jalan-jalan</label>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
+
+
+<td>
+    <?php echo $_POST['hobi1']; ?>,<?php echo $_POST['hobi2']; ?>,<?php echo $_POST['hobi3']; ?>
+</td>

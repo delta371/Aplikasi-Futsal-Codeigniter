@@ -1,0 +1,19 @@
+        <?php foreach ($menu as $m) : ?>
+            <?php if ($judul == $m['menu']) { ?>
+                <li class="nav-item">
+                    <a class="nav-link active" href=<?= base_url($m['url']); ?>>
+                        <i class="<?= $m['icon']; ?>"></i>
+                        <span class="menu-title"><?= $m['menu']; ?></span>
+                    </a>
+                </li>
+            <?php } else { ?>
+                <li class="nav-item">
+                    <a class="nav-link" href=<?= base_url($m['url']); ?>>
+
+                        <i class="<?= $m['icon']; ?>"></i>
+                        <span class="menu-title"><?= $m['menu']; ?></span>
+                    </a>
+                </li>
+            <?php } ?>
+
+        <?php endforeach; ?>
